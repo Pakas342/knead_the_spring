@@ -47,10 +47,10 @@
       "description": "Sydney's premier florist specializing in handcrafted floral arrangements for restaurants, events, and celebrations.",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Your Street Address",
+        "streetAddress": "115 cathedral street",
         "addressLocality": "Sydney",
         "addressRegion": "NSW",
-        "postalCode": "2000",
+        "postalCode": "2011",
         "addressCountry": "AU"
       },
       "geo": {
@@ -88,7 +88,7 @@
         }
         
         .hero-section {
-            background-image: linear-gradient(rgba(44, 54, 57, 0.85), rgba(44, 54, 57, 0.85)), url('/api/placeholder/1920/1080');
+            background-image: linear-gradient(rgba(44, 54, 57, 0.85), rgba(44, 54, 57, 0.85)), url('../assets/images/main_image.jpg');
             background-size: cover;
             background-position: center;
         }
@@ -117,7 +117,6 @@
             transform: translateX(-50%);
         }
 
-        /* Your other existing styles */
         .hover-scale {
             transition: transform 0.3s ease;
         }
@@ -146,13 +145,11 @@
             transform: scaleX(1);
         }
 
-        /* Focus styles for better accessibility */
         a:focus, button:focus {
             outline: 2px solid #D4AA7D;
             outline-offset: 2px;
         }
-
-        /* Reduced motion preference */
+        
         @media (prefers-reduced-motion: reduce) {
             .hover-scale, .accent-underline::after {
                 transition: none;
@@ -176,21 +173,19 @@
                 </button>
 
                 <nav class="hidden md:flex space-x-8 items-center" role="navigation" aria-label="Main navigation">
+                    <a href="#events" class="text-zinc-600 hover:text-zinc-900 accent-underline">Events</a>
                     <a href="#approach" class="text-zinc-600 hover:text-zinc-900 accent-underline">Our Approach</a>
                     <a href="#testimonials" class="text-zinc-600 hover:text-zinc-900 accent-underline">Testimonials</a>
-                    <button class="bg-[#40514E] text-white px-6 py-2 rounded-sm hover:bg-[#2C3639] transition-all duration-300 hover:shadow-lg">
-                        Contact Us
-                    </button>
+                    <a href="#contact-us" class="bg-[#40514E] text-white px-6 py-2 rounded-sm hover:bg-[#2C3639] transition-all duration-300 hover:shadow-lg inline-block">Contact Us</a>
                 </nav>
 
                 <!-- Mobile menu -->
                 <div id="mobile-menu" class="hidden absolute top-full left-0 right-0 bg-white shadow-lg p-4 md:hidden">
                     <nav class="flex flex-col space-y-4">
-                        <a href="#approach" class="text-zinc-600 hover:text-zinc-900">Our Approach</a>
-                        <a href="#testimonials" class="text-zinc-600 hover:text-zinc-900">Testimonials</a>
-                        <button class="bg-[#40514E] text-white px-6 py-2 rounded-sm hover:bg-[#2C3639] w-full">
-                            Contact Us
-                        </button>
+                        <a href="#events" class="text-zinc-600 px-6 hover:text-zinc-900 accent-underline">Events</a>
+                        <a href="#approach" class="text-zinc-600 px-6 hover:text-zinc-900 accent-underline">Our Approach</a>
+                        <a href="#testimonials" class="text-zinc-600 px-6 hover:text-zinc-900 accent-underline">Testimonials</a>
+                        <a href="#contact-us" class="bg-[#40514E] text-white px-6 py-2 rounded-sm hover:bg-[#2C3639] w-full inline-block">Contact Us</a>
                     </nav>
                 </div>
             </div>
@@ -202,15 +197,15 @@
         <!-- Enhanced Hero Section -->
         <section class="hero-section min-h-screen flex items-center pt-16" role="banner">
             <div class="container mx-auto px-4">
-                <div class="max-w-4xl mx-auto text-center">
+                <div class="max-w-5xl mx-auto text-center">
                     <h1 class="text-4xl md:text-6xl font-serif mb-6 text-[#F5EBE0] leading-tight">
                         Handcrafted Arrangements 
-                        <span class="block mt-2">Delivered with Care</span>
+                        <span class="block mt-2">Designed with Care</span>
                     </h1>
-                    <p class="text-xl mb-8 text-[#E3D5CA] max-w-2xl mx-auto">
-                        Bringing nature's elegance to Sydney's finest restaurants, events, and personal celebrations.
+                    <p class="text-2xl mb-8 text-[#E3D5CA] max-w-3xl mx-auto">
+                        Bringing nature's elegance to Sydney's finest restaurants, events, and personal celebrations
                     </p>
-                    <div class="text-sm text-[#D5BDAF] mb-12 italic font-serif">
+                    <div class="text-xl text-[#D5BDAF] mb-12 italic font-serif">
                         Crafting the flowers we'll love to receive
                     </div>
                     <button class="border-2 border-[#D4AA7D] text-[#D4AA7D] px-10 py-4 hover:bg-[#D4AA7D] hover:text-[#2C3639] transition-all duration-300 text-lg hover:shadow-xl"
@@ -219,6 +214,69 @@
                     </button>
                 </div>
             </div>
+        </section>
+
+        <!-- Our Work -->
+        <section id="events" class="relative overflow-hidden bg-zinc-50 pt-24 pb-8">
+            <div class="mx-auto px-4">
+                <h2 class="text-3xl font-serif text-center text-[#2C3639] mb-16">Our Work</h2>
+                <div class="absolute left-0 top-0 w-16 md:w-48 h-full bg-gradient-to-r from-zinc-50 to-transparent z-10"></div>
+                <div class="absolute right-0 top-0 w-16 md:w-48 h-full bg-gradient-to-l from-zinc-50 to-transparent z-10"></div>                
+                <div class="relative overflow-visible">
+                    <div class="flex animate-scroll hover:pause">
+                        <!-- First set -->
+                        <img src="../assets/images/main_image.jpg" alt="Floral arrangement 1" class="h-[250px] md:h-[400px] w-[200px] md:w-[300px] object-cover flex-none mx-2 md:mx-3 transition-transform duration-300 hover:scale-110">
+                        <img src="../assets/images/main_image.jpg" alt="Floral arrangement 2" class="h-[250px] md:h-[400px] w-[200px] md:w-[300px] object-cover flex-none mx-2 md:mx-3 transition-transform duration-300 hover:scale-110">
+                        <img src="../assets/images/main_image.jpg" alt="Floral arrangement 3" class="h-[250px] md:h-[400px] w-[200px] md:w-[300px] object-cover flex-none mx-2 md:mx-3 transition-transform duration-300 hover:scale-110">
+                        <img src="../assets/images/main_image.jpg" alt="Floral arrangement 4" class="h-[250px] md:h-[400px] w-[200px] md:w-[300px] object-cover flex-none mx-2 md:mx-3 transition-transform duration-300 hover:scale-110">
+                        <img src="../assets/images/main_image.jpg" alt="Floral arrangement 5" class="h-[250px] md:h-[400px] w-[200px] md:w-[300px] object-cover flex-none mx-2 md:mx-3 transition-transform duration-300 hover:scale-110">
+                        <!-- Duplicate set for seamless loop -->
+                        <img src="../assets/images/main_image.jpg" alt="Floral arrangement 1" class="h-[250px] md:h-[400px] w-[200px] md:w-[300px] object-cover flex-none mx-2 md:mx-3 transition-transform duration-300 hover:scale-110">
+                        <img src="../assets/images/main_image.jpg" alt="Floral arrangement 2" class="h-[250px] md:h-[400px] w-[200px] md:w-[300px] object-cover flex-none mx-2 md:mx-3 transition-transform duration-300 hover:scale-110">
+                        <img src="../assets/images/main_image.jpg" alt="Floral arrangement 3" class="h-[250px] md:h-[400px] w-[200px] md:w-[300px] object-cover flex-none mx-2 md:mx-3 transition-transform duration-300 hover:scale-110">
+                        <img src="../assets/images/main_image.jpg" alt="Floral arrangement 4" class="h-[250px] md:h-[400px] w-[200px] md:w-[300px] object-cover flex-none mx-2 md:mx-3 transition-transform duration-300 hover:scale-110">
+                        <img src="../assets/images/main_image.jpg" alt="Floral arrangement " class="h-[250px] md:h-[400px] w-[200px] md:w-[300px] object-cover flex-none mx-2 md:mx-3 transition-transform duration-300 hover:scale-110">
+                    </div>
+                </div>
+            </div>
+
+            <style>
+                @keyframes scroll {
+                    0% {
+                        transform: translateX(0);
+                    }
+                    100% {
+                        transform: translateX(-50%);
+                    }
+                }
+                .animate-scroll {
+                    animation: scroll 20s linear infinite;
+                }
+                @media (max-width: 768px) {
+                    .animate-scroll {
+                        animation: scroll-mobile 20s linear infinite;
+                    }
+                    @keyframes scroll-mobile {
+                        0% {
+                            transform: translateX(0);
+                        }
+                        100% {
+                            transform: translateX(-200%); /* Increased movement speed for mobile */
+                        }
+                    }
+                }
+                .animate-scroll:hover {
+                    animation-play-state: paused;
+                }
+                
+                /* Enable smooth scrolling on touch devices */
+                @media (hover: none) {
+                    .overflow-x-auto {
+                        -webkit-overflow-scrolling: touch;
+                        scroll-behavior: smooth;
+                    }
+                }
+            </style>
         </section>
 
         <!-- Enhanced Approach Section -->
@@ -231,7 +289,7 @@
                         <div class="text-[#40514E] mb-6" aria-hidden="true">
                             <i class="fas fa-heart text-3xl"></i>
                         </div>
-                        <h3 class="text-xl font-serif mb-4 text-[#2C3639]">Exclusive Relationships</h3>
+                        <h3 class="text-xl font-serif mb-4 text-[#2C3639]">Personal Touch</h3>
                         <p class="text-zinc-600 leading-relaxed">
                             Every flower tells a story, and we'll love to hear yours. Bouquets crafted with attention to your specific needs and style preferences.
                         </p>
@@ -284,7 +342,7 @@
         </section>
 
         <!-- Enhanced CTA Section -->
-        <section class="bg-[#2C3639] text-white" aria-labelledby="cta-heading">
+        <section id="contact-us" class="bg-[#2C3639] text-white" aria-labelledby="cta-heading">
             <div class="container mx-auto px-4 py-24">
                 <div class="max-w-2xl mx-auto text-center">
                     <h2 id="cta-heading" class="text-3xl font-serif mb-6 text-[#F5EBE0]">Let's Create Something Beautiful</h2>
@@ -329,5 +387,6 @@
             </div>
         </div>
     </footer>
+    <script src="scripts/nav.js"></script>
 </body>
 </html>
