@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Standard Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sydney's Premier Florist - Knead The Spring specializes in bespoke floral arrangements for restaurants, weddings, corporate events, and luxury celebrations. Same-day delivery available across Sydney CBD and surrounding areas.">
+    <meta name="keywords" content="sydney florist, wedding flowers sydney, event florist sydney, restaurant flowers, luxury florist sydney, corporate flowers sydney, same day flower delivery sydney">
+    <meta name="author" content="Knead The Spring">
+    
+    <!-- Canonical URL - Update with your domain -->
+    <link rel="canonical" href="https://kneadthespring.com/">
+    
+    <!-- Social Media Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Knead The Spring - Sydney's Premier Luxury Florist">
+    <meta property="og:description" content="Sydney's Premier Florist - Bespoke floral arrangements for caterings, events, and luxury celebrations. Experience the artistry of nature.">
+    <meta property="og:image" content="https://kneadthespring.com/images/og-image.jpg">
+    <meta property="og:url" content="https://kneadthespring.com">
+    <meta property="og:site_name" content="Knead The Spring">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <title>Knead The Spring - Sydney's Premier Luxury Florist | Wedding & Event Flowers</title>
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap">
+    
+    <!-- Optimized CSS Loading -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" media="print" onload="this.media='all'">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FloristStore",
+      "name": "Knead The Spring",
+      "image": "https://kneadthespring.com/images/store-front.jpg",
+      "description": "Sydney's premier florist specializing in handcrafted floral arrangements for restaurants, events, and celebrations.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "115 cathedral street",
+        "addressLocality": "Sydney",
+        "addressRegion": "NSW",
+        "postalCode": "2011",
+        "addressCountry": "AU"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": YOUR_LATITUDE,
+        "longitude": YOUR_LONGITUDE
+      },
+      "url": "https://kneadthespring.com",
+      "telephone": "YOUR_PHONE",
+      "priceRange": "$$",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "09:00",
+          "closes": "18:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "10:00",
+          "closes": "16:00"
+        }
+      ],
+      "sameAs": [
+        "https://instagram.com/kneadthespring",
+        "https://facebook.com/kneadthespring"
+      ]
+    }
+    </script>
+    <style>
+        /* Your existing styles */
+        .font-serif {
+            font-family: 'Cormorant Garamond', serif;
+        }
+        
+        .hero-section {
+            background-image: linear-gradient(rgba(44, 54, 57, 0.85), rgba(44, 54, 57, 0.85)), url('../assets/images/main_image.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Added styles for better responsiveness */
+        @media (max-width: 640px) {
+            .hero-section {
+                min-height: calc(100vh - 4rem);
+                padding-top: 2rem;
+            }
+        }
+
+        /* Skip to main content link */
+        .skip-link {
+            position: absolute;
+            left: -9999px;
+            z-index: 999;
+            padding: 1em;
+            background-color: white;
+            color: black;
+            text-decoration: none;
+        }
+        
+        .skip-link:focus {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+
+        .hover-scale:hover {
+            transform: scale(1.02);
+        }
+
+        .accent-underline {
+            position: relative;
+        }
+
+        .accent-underline::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #D4AA7D;
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .accent-underline:hover::after {
+            transform: scaleX(1);
+        }
+
+        a:focus, button:focus {
+            outline: 2px solid #D4AA7D;
+            outline-offset: 2px;
+        }
+        
+        @media (prefers-reduced-motion: reduce) {
+            .hover-scale, .accent-underline::after {
+                transition: none;
+            }
+        }
+    </style>
+</head>
+<body class="bg-zinc-50">
+    <!-- Skip to main content link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Enhanced Header with mobile menu -->
+    <header class="bg-white/95 shadow-sm fixed w-full z-50 backdrop-blur-sm" role="banner">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="/" class="text-2xl font-serif text-zinc-800 tracking-wide" aria-label="Knead the Spring Home">Knead the Spring</a>
+                
+                <!-- Mobile menu button -->
+                <button class="md:hidden p-2" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <i class="fas fa-bars text-zinc-600"></i>
+                </button>
+
+                <nav class="hidden md:flex space-x-8 items-center" role="navigation" aria-label="Main navigation">
+                    <a href="#events" class="text-zinc-600 hover:text-zinc-900 accent-underline">Events</a>
+                    <a href="#approach" class="text-zinc-600 hover:text-zinc-900 accent-underline">Our Approach</a>
+                    <a href="#testimonials" class="text-zinc-600 hover:text-zinc-900 accent-underline">Testimonials</a>
+                    <a href="#contact-us" class="bg-[#40514E] text-white px-6 py-2 rounded-sm hover:bg-[#2C3639] transition-all duration-300 hover:shadow-lg inline-block">Contact Us</a>
+                </nav>
+
+                <!-- Mobile menu -->
+                <div id="mobile-menu" class="hidden absolute top-full left-0 right-0 bg-white shadow-lg p-4 md:hidden">
+                    <nav class="flex flex-col space-y-4">
+                        <a href="#events" class="text-zinc-600 px-6 hover:text-zinc-900 accent-underline">Events</a>
+                        <a href="#approach" class="text-zinc-600 px-6 hover:text-zinc-900 accent-underline">Our Approach</a>
+                        <a href="#testimonials" class="text-zinc-600 px-6 hover:text-zinc-900 accent-underline">Testimonials</a>
+                        <a href="#contact-us" class="bg-[#40514E] text-white px-6 py-2 rounded-sm hover:bg-[#2C3639] w-full inline-block">Contact Us</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main content -->
+    <main id="main-content">
+        <!-- Enhanced Hero Section -->
+        <section class="hero-section min-h-screen flex items-center pt-16" role="banner">
+            <div class="container mx-auto px-4">
+                <div class="max-w-5xl mx-auto text-center">
+                    <h1 class="text-4xl md:text-6xl font-serif mb-6 text-[#F5EBE0] leading-tight">
+                        Handcrafted Arrangements 
+                        <span class="block mt-2">Designed with Care</span>
+                    </h1>
+                    <p class="text-2xl mb-8 text-[#E3D5CA] max-w-3xl mx-auto">
+                        Bringing nature's elegance to Sydney's finest restaurants, events, and personal celebrations
+                    </p>
+                    <div class="text-xl text-[#D5BDAF] mb-12 italic font-serif">
+                        Crafting the flowers we'll love to receive
+                    </div>
+                    <button class="border-2 border-[#D4AA7D] text-[#D4AA7D] px-10 py-4 hover:bg-[#D4AA7D] hover:text-[#2C3639] transition-all duration-300 text-lg hover:shadow-xl"
+                            aria-label="Start your floral journey">
+                        Start Your Journey
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Work -->
+        <section id="events" class="relative overflow-hidden bg-zinc-50 pt-24 pb-8">
+            <div class="mx-auto px-4">
+                <h2 class="text-3xl font-serif text-center text-[#2C3639] mb-16">Our Work</h2>
+                <div class="absolute left-0 top-0 w-16 md:w-48 h-full bg-gradient-to-r from-zinc-50 to-transparent z-10"></div>
+                <div class="absolute right-0 top-0 w-16 md:w-48 h-full bg-gradient-to-l from-zinc-50 to-transparent z-10"></div>                
+                <div class="relative overflow-visible">
+                    <div class="flex animate-scroll hover:pause">
+                        <!-- First set -->
+                        <img src="../assets/images/main_image.jpg" alt="Floral arrangement 1" class="h-[250px] md:h-[400px] w-[200px] md:w-[300px] object-cover flex-none mx-2 md:mx-3 transition-transform duration-300 hover:scale-110">
+                        <img src="../assets/images/main_image.jpg" alt="Floral arrangement 2" class="h-[250px] md:h-[400px] w-[200px] md:w-[300px] object-cover flex-none mx-2 md:mx-3 transition-transform duration-300 hover:scale-110">
+                        <img src="../assets/images/main_image.jpg" alt="Floral arrangement 3" class="h-[250px] md:h-[400px] w-[200px] md:w-[300px] object-cover flex-none mx-2 md:mx-3 transition-transform duration-300 hover:scale-110">
+                        <img src="../assets/images/main_image.jpg" alt="Floral arrangement 4" class="h-[250px] md:h-[400px] w-[200px] md:w-[300px] object-cover flex-none mx-2 md:mx-3 transition-transform duration-300 hover:scale-110">
+                        <img src="../assets/images/main_image.jpg" alt="Floral arrangement 5" class="h-[250px] md:h-[400px] w-[200px] md:w-[300px] object-cover flex-none mx-2 md:mx-3 transition-transform duration-300 hover:scale-110">
+                        <!-- Duplicate set for seamless loop -->
+                        <img src="../assets/images/main_image.jpg" alt="Floral arrangement 1" class="h-[250px] md:h-[400px] w-[200px] md:w-[300px] object-cover flex-none mx-2 md:mx-3 transition-transform duration-300 hover:scale-110">
+                        <img src="../assets/images/main_image.jpg" alt="Floral arrangement 2" class="h-[250px] md:h-[400px] w-[200px] md:w-[300px] object-cover flex-none mx-2 md:mx-3 transition-transform duration-300 hover:scale-110">
+                        <img src="../assets/images/main_image.jpg" alt="Floral arrangement 3" class="h-[250px] md:h-[400px] w-[200px] md:w-[300px] object-cover flex-none mx-2 md:mx-3 transition-transform duration-300 hover:scale-110">
+                        <img src="../assets/images/main_image.jpg" alt="Floral arrangement 4" class="h-[250px] md:h-[400px] w-[200px] md:w-[300px] object-cover flex-none mx-2 md:mx-3 transition-transform duration-300 hover:scale-110">
+                        <img src="../assets/images/main_image.jpg" alt="Floral arrangement " class="h-[250px] md:h-[400px] w-[200px] md:w-[300px] object-cover flex-none mx-2 md:mx-3 transition-transform duration-300 hover:scale-110">
+                    </div>
+                </div>
+            </div>
+
+            <style>
+                @keyframes scroll {
+                    0% {
+                        transform: translateX(0);
+                    }
+                    100% {
+                        transform: translateX(-50%);
+                    }
+                }
+                .animate-scroll {
+                    animation: scroll 20s linear infinite;
+                }
+                @media (max-width: 768px) {
+                    .animate-scroll {
+                        animation: scroll-mobile 20s linear infinite;
+                    }
+                    @keyframes scroll-mobile {
+                        0% {
+                            transform: translateX(0);
+                        }
+                        100% {
+                            transform: translateX(-200%); /* Increased movement speed for mobile */
+                        }
+                    }
+                }
+                .animate-scroll:hover {
+                    animation-play-state: paused;
+                }
+                
+                /* Enable smooth scrolling on touch devices */
+                @media (hover: none) {
+                    .overflow-x-auto {
+                        -webkit-overflow-scrolling: touch;
+                        scroll-behavior: smooth;
+                    }
+                }
+            </style>
+        </section>
+
+        <!-- Enhanced Approach Section -->
+        <section id="approach" class="container mx-auto px-4 py-24 bg-zinc-50" aria-labelledby="approach-heading">
+            <div class="max-w-7xl mx-auto">
+                <h2 id="approach-heading" class="text-3xl font-serif text-center text-[#2C3639] mb-16">Our Approach to Beauty</h2>
+                <div class="grid md:grid-cols-3 gap-12">
+                    <!-- Feature cards with proper ARIA labels -->
+                    <article class="text-center p-8 bg-white shadow-lg rounded-sm hover-scale border-t-4 border-[#D4AA7D]">
+                        <div class="text-[#40514E] mb-6" aria-hidden="true">
+                            <i class="fas fa-heart text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-serif mb-4 text-[#2C3639]">Personal Touch</h3>
+                        <p class="text-zinc-600 leading-relaxed">
+                            Every flower tells a story, and we'll love to hear yours. Bouquets crafted with attention to your specific needs and style preferences.
+                        </p>
+                    </article>
+
+                    <article class="text-center p-8 bg-white shadow-lg rounded-sm hover-scale border-t-4 border-[#D4AA7D]">
+                        <div class="text-[#40514E] mb-6" aria-hidden="true">
+                            <i class="fas fa-comments text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-serif mb-4 text-[#2C3639]">Easy Communication</h3>
+                        <p class="text-zinc-600 leading-relaxed">
+                            Direct access to our team for consultations, updates, and any questions you may have along the way.
+                        </p>
+                    </article>
+
+                    <article class="text-center p-8 bg-white shadow-lg rounded-sm hover-scale border-t-4 border-[#D4AA7D]">
+                        <div class="text-[#40514E] mb-6" aria-hidden="true">
+                            <i class="fas fa-handshake text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-serif mb-4 text-[#2C3639]">True Partnership</h3>
+                        <p class="text-zinc-600 leading-relaxed">
+                            We build lasting relationships with our clients, ensuring consistently beautiful arrangements that evolve with your needs.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Enhanced Testimonial Section -->
+        <section id="testimonials" class="bg-[#F5EBE0]" aria-labelledby="testimonials-heading">
+            <div class="container mx-auto px-4 py-24">
+                <div class="max-w-3xl mx-auto">
+                    <h2 id="testimonials-heading" class="sr-only">Customer Testimonials</h2>
+                    <div class="text-center mb-8" aria-hidden="true">
+                        <i class="fas fa-quote-left text-4xl text-[#D4AA7D]"></i>
+                    </div>
+                    <blockquote class="text-center">
+                        <p class="text-2xl text-[#2C3639] mb-8 font-serif italic leading-relaxed">
+                            "Working with Knead The Spring has transformed our restaurant's ambiance. Their weekly arrangements are always fresh, beautiful, and perfectly matched to our style."
+                        </p>
+                        <footer>
+                            <cite class="text-[#40514E] block font-serif">
+                                — Claire Robertson
+                                <span class="block text-zinc-500 text-sm mt-2">Founder of Elegance Events</span>
+                            </cite>
+                        </footer>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- Enhanced CTA Section -->
+        <section id="contact-us" class="bg-[#2C3639] text-white" aria-labelledby="cta-heading">
+            <div class="container mx-auto px-4 py-24">
+                <div class="max-w-2xl mx-auto text-center">
+                    <h2 id="cta-heading" class="text-3xl font-serif mb-6 text-[#F5EBE0]">Let's Create Something Beautiful</h2>
+                    <p class="text-[#E3D5CA] mb-12 text-lg">
+                        Whether it's a one-time celebration or regular arrangements, we're here to help bring your vision to life.
+                    </p>
+                    <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-6">
+                        <a href="https://wa.me/YOUR_NUMBER" 
+                           class="border-2 border-[#D4AA7D] text-[#D4AA7D] px-8 py-4 hover:bg-[#D4AA7D] hover:text-[#2C3639] transition-all duration-300 hover:shadow-xl group"
+                           aria-label="Contact us via WhatsApp">
+                            <i class="fab fa-whatsapp mr-2 group-hover:text-[#2C3639]" aria-hidden="true"></i>
+                            WhatsApp Us
+                        </a>
+                        <a href="mailto:contact@kneadthespring.com" 
+                           class="border-2 border-[#D4AA7D] text-[#D4AA7D] px-8 py-4 hover:bg-[#D4AA7D] hover:text-[#2C3639] transition-all duration-300 hover:shadow-xl group"
+                           aria-label="Contact us via email">
+                            <i class="far fa-envelope mr-2 group-hover:text-[#2C3639]" aria-hidden="true"></i>
+                            Email Your Enquiry
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Enhanced Footer -->
+    <footer class="bg-[#2C3639] border-t border-zinc-800" role="contentinfo">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <div class="text-2xl font-serif text-[#F5EBE0] mb-6">Knead the Spring</div>
+                <div class="flex justify-center space-x-6 mb-8">
+                    <a href="#" class="text-[#D4AA7D] hover:text-[#F5EBE0] transition-colors" aria-label="Follow us on Instagram">
+                        <i class="fab fa-instagram text-xl" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" class="text-[#D4AA7D] hover:text-[#F5EBE0] transition-colors" aria-label="Google Business">
+                        <i class="fab fa-google text-xl" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <p class="text-[#E3D5CA] text-sm">
+                    © 2024 Knead The Spring. Serving Sydney with love.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/nav.js"></script>
+</body>
+</html>
