@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tailwindcss -i ./src/input.css -o ./output.css --watch",
-    "deploy": "git push origin `git subtree split --prefix src main`:gh-pages --force"
+    "deploy": "git subtree push --prefix src origin gh-pages"
   },
   "keywords": [],
   "author": "",
