@@ -1,0 +1,154 @@
+/* Base font size adjustments */
+.font-serif {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1em;
+}
+
+/* Adjusted heading scales with heavier weights */
+h1.font-serif {
+    font-size: 2.75rem;
+}
+
+@media (min-width: 768px) {
+    h1.font-serif {
+        font-size: 4.5rem;
+    }
+}
+
+h2.font-serif {
+    font-size: 2.25rem;
+}
+
+/* Logo size adjustment with medium weight */
+a.font-serif {
+    font-size: 1.75rem;
+}
+
+/* Adjust other Cormorant text elements */
+.text-2xl.font-serif {
+    font-size: 1.75rem;
+}
+
+.text-xl.font-serif {
+    font-size: 1.5rem;
+}
+
+/* Special handling for italic text */
+.italic.font-serif {
+    font-weight: 500; /* Keep consistent with regular text */
+    font-size: 2rem;
+}
+
+/* For extra emphasis when needed */
+.font-serif.font-semibold {
+    font-weight: 600;
+}
+
+.font-sans-serif {
+    font-family: 'Inter', sans-serif;
+}
+
+.hero-section {
+    background-image: linear-gradient(rgba(44, 54, 57, 0.85), rgba(44, 54, 57, 0.85)), url('./assets/images/main_image.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Added styles for better responsiveness */
+@media (max-width: 640px) {
+    .hero-section {
+        min-height: calc(100vh - 4rem);
+        padding-top: 2rem;
+    }
+}
+
+/* Skip to main content link */
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    z-index: 999;
+    padding: 1em;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+}
+
+.skip-link:focus {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hover-scale {
+    transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform: scale(1.02);
+}
+
+.accent-underline {
+    position: relative;
+}
+
+.accent-underline::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #D4AA7D;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.accent-underline:hover::after {
+    transform: scaleX(1);
+}
+
+a:focus, button:focus {
+    outline: 2px solid #D4AA7D;
+    outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hover-scale, .accent-underline::after {
+        transition: none;
+    }
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+.animate-scroll {
+    animation: scroll 20s linear infinite;
+}
+@media (max-width: 768px) {
+    .animate-scroll {
+        animation: scroll-mobile 20s linear infinite;
+    }
+    @keyframes scroll-mobile {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-200%); /* Increased movement speed for mobile */
+        }
+    }
+}
+.animate-scroll:hover {
+    animation-play-state: paused;
+}
+
+/* Enable smooth scrolling on touch devices */
+@media (hover: none) {
+    .overflow-x-auto {
+        -webkit-overflow-scrolling: touch;
+        scroll-behavior: smooth;
+    }
+}
