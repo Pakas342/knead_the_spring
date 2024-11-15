@@ -55,17 +55,17 @@ document.addEventListener('DOMContentLoaded', function() {
     phoneInput.addEventListener('input', (e) => {
         // Remove any non-digit characters
         let cleaned = e.target.value.replace(/\D/g, '');
-        // Limit to 15 digits
+        // Limit to 11 digits
         cleaned = cleaned.substring(0, 11);
         // Format the number as user types
         let formatted = '';
         if (cleaned.length > 0) {
-            formatted = `(${cleaned.substring(0,3)}`;
-            if (cleaned.length > 3) {
-                formatted += `) ${cleaned.substring(3,6)}`;
+            formatted = cleaned.substring(0, 4);
+            if (cleaned.length > 4) {
+                formatted += ` ${cleaned.substring(4, 7)}`;
             }
-            if (cleaned.length > 6) {
-                formatted += `-${cleaned.substring(6)}`;
+            if (cleaned.length > 7) {
+                formatted += ` ${cleaned.substring(7)}`;
             }
         }
         e.target.value = formatted;
