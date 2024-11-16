@@ -137,7 +137,7 @@ document.addEventListener('DOMContentLoaded', function() {
             };
 
             // Send to webhook
-            const response = await fetch('https://x8ki-letl-twmt.n7.xano.io/api:cIPk33iT/test', {
+            const response = await fetch('https://x8ki-letl-twmt.n7.xano.io/api:RzUxkAYO/enquiry', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
