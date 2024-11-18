@@ -152,3 +152,36 @@ a:focus, button:focus {
         scroll-behavior: smooth;
     }
 }
+#services {
+    background-color: #2C3639;
+    position: relative;
+}
+
+/* Pattern overlay */
+#services::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('./assets/patterns/services-pattern.svg');
+    background-size: 40px 40px; /* Slightly smaller pattern */
+    background-repeat: repeat;
+    opacity: 0.08; /* More subtle opacity */
+    pointer-events: none;
+}
+
+/* Ensure content stays above pattern */
+#services > .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Responsive adjustments */
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #services::before {
+        background-size: 25px 25px; /* Smaller pattern on mobile */
+    }
+}
